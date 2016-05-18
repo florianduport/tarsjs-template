@@ -1,0 +1,27 @@
+{
+  "name": "tarsjs-template",
+  "version": "1.0.0",
+  "description": "tarsjs template for new projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianduport/tarsjs-template.git"
+  },
+  "keywords": [
+    "tarjs",
+    "docker",
+    "sails",
+    "angular",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "florianduport",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/florianduport/tarsjs-template/issues"
+  },
+  "homepage": "https://github.com/florianduport/tarsjs-template#readme"
+}
