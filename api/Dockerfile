@@ -9,5 +9,5 @@ ENV PATH /install/node_modules/.bin:$PATH
 # so that you can `require` any installed module
 ENV NODE_PATH /install/node_modules/
 
-COPY /data/src/package.json /install/package.json
-RUN cd install; npm install
+COPY ./src/package.json /install/package.json
+RUN cd /install; npm install
