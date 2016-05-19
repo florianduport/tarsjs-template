@@ -2,8 +2,6 @@ FROM node
 RUN npm install -g sails
 RUN npm install -g nodemon
 WORKDIR /data/src
-RUN sails new src
-RUN rm -rf /data/src/node_modules
 
 # so that npm installs not into the code path, so we can share this directory and still have npm_modules not shared
 RUN mkdir -p /install/ # so that executable from modules are added to the path
