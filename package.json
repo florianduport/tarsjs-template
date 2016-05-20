@@ -1,6 +1,6 @@
 {
   "name": "tarsjs-template",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "tarsjs template for new projects",
   "main": "index.js",
   "scripts": {
