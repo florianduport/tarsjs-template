@@ -11,3 +11,4 @@ ENV NODE_PATH /install/node_modules/
 
 COPY ./src/package.json /install/package.json
 RUN cd /install; npm install
+RUN ln -s /install/node_modules /data/src

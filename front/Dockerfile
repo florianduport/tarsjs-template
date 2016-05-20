@@ -21,10 +21,13 @@ ENV PATH /install/node_modules/.bin:$PATH
 ENV NODE_PATH /install/node_modules/
 
 COPY ./src/package.json /install/package.json
-RUN cd install; npm install
+RUN cd /install; npm install
+RUN ln -s /install/node_modules /data/src
+
 
 RUN npm install -g bower
 
 RUN mkdir /bower
 COPY ./src/bower.json /bower/bower.json
 RUN cd /bower; bower install --allow-root
+RUN ln -s /bower/bower_components /data/src
