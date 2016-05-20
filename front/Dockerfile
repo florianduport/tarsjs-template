@@ -26,8 +26,3 @@ RUN ln -s /install/node_modules /data/src
 
 
 RUN npm install -g bower
-
-RUN mkdir /bower
-COPY ./src/bower.json /bower/bower.json
-RUN cd /bower; bower install --allow-root
-RUN ln -s /bower/bower_components /data/src

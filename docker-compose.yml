@@ -7,7 +7,8 @@ services:
     volumes:
       - "./front/src/:/data/src/"
       - "./front/conf:/etc/nginx/sites-available"
-    command: bash -c "./start.sh"
+      - "./front/scripts:/data/scripts"
+    command: bash -c "/data/scripts/start.sh"
     networks:
         tars_net:
           ipv4_address: ==project.iptemplate==.10
@@ -18,7 +19,8 @@ services:
       - "1337:1337"
     volumes:
       - "./api/src:/data/src"
-    command: "sails lift"
+      - "./api/scripts:/data/scripts"
+    command: bash -c "/data/scripts/start.sh"
     networks:
         tars_net:
           ipv4_address: ==project.iptemplate==.11
